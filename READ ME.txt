@@ -1,7 +1,0 @@
-RE-CREATE SPOTIFY WEB
-
-Untuk pembuatan website kali ini, saya berusaha untuk membuat ulang web seperti Spotify menggunakan HTML, CSS, dan JavaScript, namun dengan beberapa fitur yang saya sesuaikan dengan kecocokan saya dalam membuat web ini.
-
-Fitur yg saya gunakan antara lain :
-- Dragable cards yang bisa menggeser icon Popular Artist, Popular Album, dst. dengan meng-klik kemudian menarik gambar icon ke kanan dan ke kiri
-- Side navigation menu yang menggunakan fitur card slider
