@@ -112,8 +112,8 @@ body {
   align-items: center;
 }
 .brand img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
   margin-right: 0.25em;
 }
 .brand h1 {
@@ -141,6 +141,7 @@ body {
 .round-icons:hover {
   transition: all 0.2s;
   transform: scale(1.1);
+  cursor: pointer;
 }
 #search {
   display: flex;
@@ -220,13 +221,19 @@ body {
   padding: 0 0 0 1em;
   margin-bottom: 2em;
 }
+.side-icons:hover {
+  background-color: var(--light-background);
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 1em;
+}
+.add-padding {
+  padding: 0.75em 0.5em 0.75em 1em;
+}
 #library-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.add-padding {
-  padding: 0.75em 0.5em 0.75em 1em;
 }
 #side-menu .flex-left h2 {
   margin-left: 0.75em;
@@ -240,6 +247,9 @@ body {
 #add-playlist {
   font-size: 1rem;
   color: var(--grey-texts);
+}
+#add-playlist:hover {
+  cursor: pointer;
 }
 #library-menu {
   padding: 0.5em;
@@ -275,6 +285,7 @@ body {
 }
 #library button:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 #aside-footer {
   padding: 0.5em 1em 1em 1.5em;
@@ -310,6 +321,7 @@ body {
   transform: scale(1.1);
   color: #ffffff;
   border-radius: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 /* Main content */
@@ -402,6 +414,10 @@ footer .flex-container {
 .footer-content p {
   font-size: 1rem;
   font-weight: 300;
+}
+.footer-content p:hover {
+  color: #ffffff;
+  cursor: pointer;
 }
 .footer-content p:not(:last-of-type) {
   margin-bottom: 0.2rem;
