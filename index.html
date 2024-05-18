@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/spotify-logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/d2cf505fc4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <!-- Navbar -->
+      <nav id="top-navbar">
+        <div class="flex-left">
+          <div class="menu-btn" id="openBtn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="brand">
+            <a href="#">
+              <img src="assets/spotify-logo.png" alt="spotify-logo" />
+            </a>
+            <h1>Spotify</h1>
+          </div>
+        </div>
+        <div id="navigation">
+          <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="What do you want to listen to?" />
+          </div>
+          <a href="#">
+            <div class="round-icons">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+          </a>
+        </div>
+        <div id="account">
+          <button id="sign-up">Sign Up</button>
+          <button id="login">Log In</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Side Menu -->
+      <aside id="side-menu">
+        <div id="side-wrap">
+          <div class="flex-left wrap">
+            <div class="menu-btn" id="closeBtn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="brand">
+              <a href="#">
+                <img src="assets/spotify-logo.png" alt="spotify-logo" />
+              </a>
+              <h1>Spotify</h1>
+            </div>
+          </div>
+          <div class="flex-left add-padding">
+            <i class="fa-solid fa-house"></i>
+            <h2>Home</h2>
+          </div>
+          <div class="flex-left add-padding">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h2>Search</h2>
+          </div>
+          <div id="library-title" class="add-padding">
+            <div class="flex-left">
+              <i class="fa-solid fa-headphones-simple"></i>
+              <h2>Your Library</h2>
+            </div>
+            <div id="add-playlist">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+          </div>
+          <div id="library-menu">
+            <div id="library">
+              <h3>Create Your First Playlist</h3>
+              <p>It's easy, we'll help you</p>
+              <button>Create Playlist</button>
+            </div>
+            <div id="library">
+              <h3>Let's find some podcast to follow</h3>
+              <p>We'll keep you update on new episodes</p>
+              <button>Browse Podcast</button>
+            </div>
+          </div>
+          <div id="aside-footer">
+            <div id="footer-menu">
+              <div class="footer-desc">
+                <p>Legal</p>
+              </div>
+              <div class="footer-desc">
+                <p>Safety & Privacy Center</p>
+              </div>
+              <div class="footer-desc">
+                <p>Privacy Policy</p>
+              </div>
+              <div class="footer-desc">
+                <p>Cookies</p>
+              </div>
+              <div class="footer-desc">
+                <p>About Ads</p>
+              </div>
+              <div class="footer-desc">
+                <p>Accessibility</p>
+              </div>
+            </div>
+            <div id="languages">
+              <button>
+                <i class="fa-solid fa-earth-americas"></i>
+                English
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="container">
+        <!-- Popular Artist -->
+        <article class="wrap-container">
+          <div class="flex-container">
+            <div>
+              <h3>Popular Artist</h3>
+            </div>
+            <div>
+              <p>Show all</p>
+            </div>
+          </div>
+          <div class="content-slider">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/the-smiths.jpeg" alt="the-smiths" />
+                </div>
+                <h4>The Smiths</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/reality-club.jpeg" alt="reality-club" />
+                </div>
+                <h4>Reality Club</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/mother-mother.jpeg" alt="mother-mother" />
+                </div>
+                <h4>Mother Mother</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/the-weeknd.jpeg" alt="the-weeknd" />
+                </div>
+                <h4>The Weeknd</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/the-beatless.jpeg" alt="the-beatless" />
+                </div>
+                <h4>The Beatless</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/paris-paloma.jpeg" alt="paris-paloma" />
+                </div>
+                <h4>Paris Paloma</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/taylor-swift.jpeg" alt="taylor-swift" />
+                </div>
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/sophie-ellis.jpeg" alt="sophie-ellis" />
+                </div>
+                <h4>Sophie Ellis Bextor</h4>
+              </div>
+              <div class="card">
+                <div class="pic-round">
+                  <img src="assets/skillet.jpeg" alt="skillet" />
+                </div>
+                <h4>Skillet</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Popular Album -->
+        <article class="wrap-container">
+          <div class="flex-container">
+            <div>
+              <h3>Popular Album</h3>
+            </div>
+            <div>
+              <p>Show all</p>
+            </div>
+          </div>
+          <div class="content-slider">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-smiths.jpeg" alt="the-smiths" />
+                </div>
+                <h4>The Smiths</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/reality-club.jpeg" alt="reality-club" />
+                </div>
+                <h4>Reality Club</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/mother-mother.jpeg" alt="mother-mother" />
+                </div>
+                <h4>Mother Mother</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-lumineers.jpeg" alt="the-lumineers" />
+                </div>
+                <h4>The Lumineers</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-beatless-album.jpeg" alt="the-beatless-album" />
+                </div>
+                <h4>The Beatless</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/snow-patrol.jpeg" alt="snow-patrol-album" />
+                </div>
+                <h4>Snow Patrol</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/taylor-swift.jpeg" alt="taylor-swift" />
+                </div>
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/sophie-ellis.jpeg" alt="sophie-ellis" />
+                </div>
+                <h4>Sophie Ellis Bextor</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/skillet.jpeg" alt="skillet" />
+                </div>
+                <h4>Skillet</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Popular Radio -->
+        <article class="wrap-container">
+          <div class="flex-container">
+            <div>
+              <h3>Popular Radio</h3>
+            </div>
+            <div>
+              <p>Show all</p>
+            </div>
+          </div>
+          <div class="content-slider">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-smiths.jpeg" alt="the-smiths" />
+                </div>
+                <h4>The Smiths</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/reality-club.jpeg" alt="reality-club" />
+                </div>
+                <h4>Reality Club</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/mother-mother.jpeg" alt="mother-mother" />
+                </div>
+                <h4>Mother Mother</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-weeknd.jpeg" alt="the-weeknd" />
+                </div>
+                <h4>The Weeknd</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-beatless.jpeg" alt="the-beatless" />
+                </div>
+                <h4>The Beatless</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/paris-paloma.jpeg" alt="paris-paloma" />
+                </div>
+                <h4>Paris Paloma</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/taylor-swift.jpeg" alt="taylor-swift" />
+                </div>
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/sophie-ellis.jpeg" alt="sophie-ellis" />
+                </div>
+                <h4>Sophie Ellis Bextor</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/skillet.jpeg" alt="skillet" />
+                </div>
+                <h4>Skillet</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured Charts -->
+        <article class="wrap-container">
+          <div class="flex-container">
+            <div>
+              <h3>Featured Charts</h3>
+            </div>
+            <div>
+              <p>Show all</p>
+            </div>
+          </div>
+          <div class="content-slider">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-smiths.jpeg" alt="the-smiths" />
+                </div>
+                <h4>The Smiths</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/reality-club.jpeg" alt="reality-club" />
+                </div>
+                <h4>Reality Club</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/mother-mother.jpeg" alt="mother-mother" />
+                </div>
+                <h4>Mother Mother</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-weeknd.jpeg" alt="the-weeknd" />
+                </div>
+                <h4>The Weeknd</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-beatless.jpeg" alt="the-beatless" />
+                </div>
+                <h4>The Beatless</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/paris-paloma.jpeg" alt="paris-paloma" />
+                </div>
+                <h4>Paris Paloma</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/taylor-swift.jpeg" alt="taylor-swift" />
+                </div>
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/sophie-ellis.jpeg" alt="sophie-ellis" />
+                </div>
+                <h4>Sophie Ellis Bextor</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/skillet.jpeg" alt="skillet" />
+                </div>
+                <h4>Skillet</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recommendation Playlist -->
+        <article class="wrap-container">
+          <div class="flex-container">
+            <div>
+              <h3>Recommendation Playlist</h3>
+            </div>
+            <div>
+              <p>Show all</p>
+            </div>
+          </div>
+          <div class="content-slider">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-smiths.jpeg" alt="the-smiths" />
+                </div>
+                <h4>The Smiths</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/reality-club.jpeg" alt="reality-club" />
+                </div>
+                <h4>Reality Club</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/mother-mother.jpeg" alt="mother-mother" />
+                </div>
+                <h4>Mother Mother</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-weeknd.jpeg" alt="the-weeknd" />
+                </div>
+                <h4>The Weeknd</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-beatless.jpeg" alt="the-beatless" />
+                </div>
+                <h4>The Beatless</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/paris-paloma.jpeg" alt="paris-paloma" />
+                </div>
+                <h4>Paris Paloma</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/taylor-swift.jpeg" alt="taylor-swift" />
+                </div>
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/sophie-ellis.jpeg" alt="sophie-ellis" />
+                </div>
+                <h4>Sophie Ellis Bextor</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/skillet.jpeg" alt="skillet" />
+                </div>
+                <h4>Skillet</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Original Podcast -->
+        <article class="wrap-container">
+          <div class="flex-container">
+            <div>
+              <h3>Original Podcast</h3>
+            </div>
+            <div>
+              <p>Show all</p>
+            </div>
+          </div>
+          <div class="content-slider">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-smiths.jpeg" alt="the-smiths" />
+                </div>
+                <h4>The Smiths</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/reality-club.jpeg" alt="reality-club" />
+                </div>
+                <h4>Reality Club</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/mother-mother.jpeg" alt="mother-mother" />
+                </div>
+                <h4>Mother Mother</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-weeknd.jpeg" alt="the-weeknd" />
+                </div>
+                <h4>The Weeknd</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/the-beatless.jpeg" alt="the-beatless" />
+                </div>
+                <h4>The Beatless</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/paris-paloma.jpeg" alt="paris-paloma" />
+                </div>
+                <h4>Paris Paloma</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/taylor-swift.jpeg" alt="taylor-swift" />
+                </div>
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/sophie-ellis.jpeg" alt="sophie-ellis" />
+                </div>
+                <h4>Sophie Ellis Bextor</h4>
+              </div>
+              <div class="card">
+                <div class="pic-square">
+                  <img src="assets/skillet.jpeg" alt="skillet" />
+                </div>
+                <h4>Skillet</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="wrap-container">
+        <div class="flex-container">
+          <div class="footer-content">
+            <h4>Company</h4>
+            <p>About</p>
+            <p>Jobs</p>
+            <p>For the Record</p>
+          </div>
+          <div class="footer-content">
+            <h4>Communities</h4>
+            <p>For Artists</p>
+            <p>Developers</p>
+            <p>Advertising</p>
+            <p>Investors</p>
+            <p>Investors</p>
+            <p>Vendors</p>
+          </div>
+          <div class="footer-content">
+            <h4>Useful Links</h4>
+            <p>Support</p>
+            <p>Free Mobile App</p>
+          </div>
+          <div class="footer-content">
+            <h4>Spotify Plans</h4>
+            <p>Premium Individual</p>
+            <p>Premium Duo</p>
+            <p>Premium Family</p>
+            <p>Premium Student</p>
+            <p>Spotify Free</p>
+          </div>
+          <div class="footer-content">
+            <div class="round-icons">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="round-icons">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="round-icons">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+        <div id="credit">
+          <p>&copy 2024 Nadya Fitriasari</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
